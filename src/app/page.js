@@ -462,7 +462,7 @@ const HomePage = () => {
           {/* Main Content */}
           <div className="mb-8 sm:mb-12">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-exo font-bold text-white mb-4 sm:mb-6">
-              LET'S WORK
+              {"LET'S"} WORK
               <br />
               <span className="text-white/60">TOGETHER</span>
             </h2>
@@ -472,7 +472,7 @@ const HomePage = () => {
             <p className="font-jet text-lg sm:text-xl text-gray-300 max-w-xl sm:max-w-2xl mx-auto leading-relaxed px-4">
               Ready to transform your ideas into digital reality?
               <br className="hidden sm:block" />
-              Let's collaborate and create something extraordinary.
+              {"Let's"} collaborate and create something extraordinary.
             </p>
           </div>
 
