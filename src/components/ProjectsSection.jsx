@@ -14,7 +14,7 @@ const projectsData = [
     description:
       "A virtual campus tour website designed to help new students and visitors explore the university remotely. Developed using HTML, CSS, and third-party panorama tools (Pano2VR & Kuula), the application includes interactive hotspots, admin panel for updates, and a 360° campus view.",
     image: "/projects/Virtual-Tour.png",
-    githubLink: "https://github.com/",
+    githubLink: "https://github.com/NvZ4/Dorm-and-Campus-Virtual-Tour.git",
     documentationLink: null,
   },
   {
