@@ -63,32 +63,26 @@ const ProjectModal = ({ project, onClose }) => {
         <div className="hidden sm:block absolute top-6 right-20 w-16 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[data-stream_2s_ease-in-out_infinite_1.2s]"></div>
         <div className="hidden sm:block absolute bottom-12 left-16 w-20 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent animate-[data-stream_2.5s_ease-in-out_infinite_1.8s]"></div>
 
-        {/* Tombol Close dengan Hamburger untuk Mobile - Responsive positioning */}
+        {/* Tombol Close - Tampilan sama di semua ukuran layar */}
         <button
           onClick={onClose}
-          className="fixed top-4 right-4 sm:absolute sm:top-4 sm:right-4 text-gray-400 hover:text-white transition-all duration-300 group z-50"
+          className="absolute top-4 right-4 text-gray-400 hover:text-white transition-all duration-300 group z-50"
         >
-          <div className="relative p-2 sm:p-2 bg-black/80 sm:bg-transparent rounded-full sm:rounded-none backdrop-blur-sm sm:backdrop-blur-none">
-            {/* Mobile: Hamburger style close */}
-            <div className="sm:hidden w-5 h-5 flex flex-col justify-center items-center">
-              <div className="w-4 h-0.5 bg-gray-400 group-hover:bg-white transform rotate-45 translate-y-0.5 transition-all duration-300"></div>
-              <div className="w-4 h-0.5 bg-gray-400 group-hover:bg-white transform -rotate-45 -translate-y-0.5 transition-all duration-300"></div>
-            </div>
+          <div className="relative p-2">
+            {/* Ikon X yang konsisten */}
+            <FaTimes size={20} />
             
-            {/* Desktop: Original X icon */}
-            <FaTimes size={20} className="hidden sm:block" />
-            
-            {/* Hover Tech Border - Only on desktop */}
-            <div className="hidden sm:block absolute inset-0 border border-transparent group-hover:border-white/30 transition-all duration-300"></div>
-            <div className="hidden sm:block absolute -top-1 -left-1 w-2 h-2 border-t border-l border-transparent group-hover:border-white/50 transition-all duration-300"></div>
-            <div className="hidden sm:block absolute -bottom-1 -right-1 w-2 h-2 border-b border-r border-transparent group-hover:border-white/50 transition-all duration-300"></div>
+            {/* Hover Tech Border - Aktif di semua ukuran */}
+            <div className="absolute inset-0 border border-transparent group-hover:border-white/30 transition-all duration-300"></div>
+            <div className="absolute -top-1 -left-1 w-2 h-2 border-t border-l border-transparent group-hover:border-white/50 transition-all duration-300"></div>
+            <div className="absolute -bottom-1 -right-1 w-2 h-2 border-b border-r border-transparent group-hover:border-white/50 transition-all duration-300"></div>
           </div>
         </button>
 
-        {/* Konten Modal dengan Delayed Animation - Responsive layout */}
-        <div className="animate-[modal-content-reveal_0.8s_ease-out_0.5s_forwards] opacity-0 flex flex-col h-full max-h-[calc(100vh-2rem)] sm:max-h-[calc(100vh-4rem)]">
+        {/* Konten Modal dengan Delayed Animation & SCROLL UTAMA */}
+        <div className="animate-[modal-content-reveal_0.8s_ease-out_0.5s_forwards] opacity-0 flex flex-col h-full max-h-[calc(100vh-2rem)] sm:max-h-[calc(100vh-4rem)] overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white/20 hover:scrollbar-thumb-white/30">
           {/* Responsive layout: stack on mobile, side-by-side on larger screens */}
-          <div className="flex flex-col md:flex-row gap-4 sm:gap-6 lg:gap-8 p-4 sm:p-6 lg:p-8 flex-grow overflow-hidden">
+          <div className="flex flex-col md:flex-row gap-4 sm:gap-6 lg:gap-8 p-4 sm:p-6 lg:p-8">
             {/* Image Section dengan Tech Frame - Responsive sizing */}
             <div className="flex-shrink-0 w-full md:w-80 lg:w-96">
               <div className="relative w-full aspect-video rounded-md overflow-hidden group">
@@ -112,8 +106,8 @@ const ProjectModal = ({ project, onClose }) => {
               </div>
             </div>
 
-            {/* Content Section - Responsive spacing with scrollable content */}
-            <div className="flex flex-col flex-grow min-w-0 overflow-hidden">
+            {/* Content Section - Responsive spacing */}
+            <div className="flex flex-col flex-grow min-w-0">
               {/* Title dengan Tech Underline - Responsive text size */}
               <div className="relative mb-4 sm:mb-6 flex-shrink-0">
                 <h2 className="font-exo text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 break-words">
@@ -140,9 +134,9 @@ const ProjectModal = ({ project, onClose }) => {
               </div>
 
               {/* Scrollable Content Area */}
-              <div className="flex flex-col flex-grow overflow-hidden">
-                {/* Description dengan Typing Effect - Scrollable */}
-                <div className="relative mb-4 sm:mb-6 overflow-y-auto flex-grow scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white/20 hover:scrollbar-thumb-white/30 pr-2">
+              <div className="flex flex-col flex-grow">
+                {/* Description dengan Typing Effect - TIDAK LAGI SCROLL INTERNAL */}
+                <div className="relative mb-4 sm:mb-6 pr-2">
                   <p className="font-jet text-xs sm:text-sm text-gray-300 leading-relaxed animate-[text-reveal_1.5s_ease-out_1.6s_forwards] opacity-0 break-words">
                     {project.description}
                   </p>
@@ -151,7 +145,7 @@ const ProjectModal = ({ project, onClose }) => {
                 </div>
 
                 {/* GitHub/Documentation Button - Fixed at bottom */}
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0 mt-auto">
                   {project.githubLink ? (
                     <a
                       href={project.githubLink}
