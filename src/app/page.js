@@ -609,7 +609,6 @@ const HomePage = () => {
               <div className="flex items-center gap-4 text-xs font-jet text-gray-500">
                 <span>Built with Next.js & Tailwind CSS</span>
                 <div className="w-1 h-1 bg-gray-500 rounded-full"></div>
-                <span>Designed with ❤️</span>
               </div>
             </div>
           </div>
