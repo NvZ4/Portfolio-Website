@@ -308,11 +308,11 @@ const HomePage = () => {
               that are user-friendly, look good, and are safe to use.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               <StatCard value="1+" label="Years Experience" />
               <StatCard value="5+" label="Projects" />
               <StatCard value="25" label="Skills" />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
