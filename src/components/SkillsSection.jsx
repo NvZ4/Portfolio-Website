@@ -31,7 +31,7 @@ import { VscTerminalCmd } from "react-icons/vsc";
 import { GiWireCoil, GiNautilusShell, GiBugNet } from "react-icons/gi";
 import { BiLogoBlender } from "react-icons/bi";
 
-// ... (Data skillsData dan levelStyles Anda tetap sama)
+
 const skillsData = {
   Language: [
     { name: "Java", level: "Advanced", icon: FaJava },
@@ -101,16 +101,16 @@ const levelStyles = {
 
 const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState(categories[0]);
-  // 1. State baru untuk mengontrol transisi
+
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  // 2. Fungsi baru untuk menangani klik pada tab
+
   const handleTabClick = (category) => {
-    if (category === activeCategory) return; // Jangan lakukan apa-apa jika kategori sama
+    if (category === activeCategory) return; 
 
-    setIsTransitioning(true); // Mulai transisi fade-out
+    setIsTransitioning(true); 
 
-    // Tunggu transisi fade-out selesai (200ms) sebelum mengganti konten
+
     setTimeout(() => {
       setActiveCategory(category);
       setIsTransitioning(false); // Mulai transisi fade-in
@@ -153,7 +153,7 @@ const SkillsSection = () => {
         {skillsData[activeCategory].map((skill, index) => (
           <div 
             key={skill.name}
-            // --- PERUBAHAN DI SINI: ubah 0.8s menjadi 0.5s ---
+            
             className="animate-[flicker-in_0.5s_ease-out_forwards]"
             style={{ animationDelay: `${index * 70}ms`, opacity: 0 }}
           >
