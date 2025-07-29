@@ -36,14 +36,14 @@ const skillsData = {
   Language: [
     { name: "Java", level: "Advanced", icon: FaJava },
     { name: "Python", level: "Intermediate", icon: FaPython },
-    { name: "JavaScript", level: "Intermediate", icon: FaJs },
+    { name: "JavaScript", level: "Advanced", icon: FaJs },
     { name: "PHP", level: "Learning", icon: FaPhp },
   ],
   "Web Development": [
     { name: "HTML", level: "Comfortable", icon: FaHtml5 },
     { name: "CSS", level: "Advanced", icon: FaCss3Alt },
     { name: "TailwindCSS", level: "Intermediate", icon: SiTailwindcss },
-    { name: "React", level: "Learning", icon: FaReact },
+    { name: "React", level: "Intermediate", icon: FaReact },
     { name: "Node.js", level: "Advanced", icon: FaNodeJs },
     { name: "Next.js", level: "Learning", icon: SiNextdotjs },
     { name: "MongoDB", level: "Learning", icon: SiMongodb },
