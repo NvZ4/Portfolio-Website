@@ -17,25 +17,25 @@ const projectsData = [
     githubLink: "https://github.com/NvZ4/Dorm-and-Campus-Virtual-Tour.git",
     documentationLink: null,
   },
-  // {
-  //   title: "Random Post - Full-Stack Blog Platform",
-  //   tags: [
-  //     "React",
-  //     "Node.js",
-  //     "Express",
-  //     "MongoDB",
-  //     "JWT",
-  //     "Passport.js",
-  //     "Google OAuth",
-  //     "Tailwind CSS",
-  //   ],
-  //   category: "Web Development",
-  //   description:
-  //     "A full-stack blogging application that allows users to create, read, update, and delete posts and comments. The project is built with a Node.js/Express backend featuring a RESTful API and a MongoDB database. The authentication system uses Passport.js, supporting local login with JSON Web Tokens (JWT) and login via Google OAuth 2.0. The frontend is developed using React and React Router for navigation, and styled with Tailwind CSS for responsive design.",
-  //   image: "/projects/Random-Post.png",
-  //   githubLink: "https://github.com/NvZ4/Random-Post.git",
-  //   documentationLink: null,
-  // },
+  {
+    title: "Random Post - Full-Stack Blog Platform",
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Passport.js",
+      "Google OAuth",
+      "Tailwind CSS",
+    ],
+    category: "Web Development",
+    description:
+      "A full-stack blogging application that allows users to create, read, update, and delete posts and comments. The project is built with a Node.js/Express backend featuring a RESTful API and a MongoDB database. The authentication system uses Passport.js, supporting local login with JSON Web Tokens (JWT) and login via Google OAuth 2.0. The frontend is developed using React and React Router for navigation, and styled with Tailwind CSS for responsive design.",
+    image: "/projects/Random-Post.png",
+    githubLink: "https://github.com/NvZ4/Random-Post.git",
+    documentationLink: null,
+  },
   {
     title: "Security Risk Assessment - Octave Allegro",
     tags: [
