@@ -25,6 +25,7 @@ import {
   SiMysql,
   SiMongodb,
   SiApachenetbeanside,
+  SiExpress,
 } from "react-icons/si";
 import { TbDeviceDesktopSearch } from "react-icons/tb";
 import { VscTerminalCmd } from "react-icons/vsc";
@@ -46,9 +47,10 @@ const skillsData = {
     { name: "React", level: "Intermediate", icon: FaReact },
     { name: "Node.js", level: "Advanced", icon: FaNodeJs },
     { name: "Next.js", level: "Learning", icon: SiNextdotjs },
-    { name: "MongoDB", level: "Learning", icon: SiMongodb },
+    { name: "MongoDB", level: "Intermediate", icon: SiMongodb },
     { name: "Vite", level: "Intermediate", icon: SiVite },
     { name: "MySQL", level: "Advanced", icon: SiMysql },
+    { name: "Express.js", level: "Learning", icon: SiExpress },
   ],
   CyberSecurity: [
     { name: "Wireshark", level: "Intermediate", icon: GiWireCoil },
